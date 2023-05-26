@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="w-screen">
+    <main className="w-full">
       <div>
         <Image src="/assets/bg-welcome.png" alt="hero" fill className="-z-10" />
         <Header />

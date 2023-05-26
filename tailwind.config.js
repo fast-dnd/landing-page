@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'jibril': ['Jibril Regular', 'sans-serif'],
+        'jost': ['Jost*', 'sans-serif'],
+      },
       colors: {
         black: "#000",
         white: "#fff",
