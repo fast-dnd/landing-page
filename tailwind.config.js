@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        '2': ['28px', '48px'],
+        '3': ['20px', {
+          lineHeight: '46px',
+          letterSpacing: '4px',
+        }],
+      },
       colors: {
         black: "#000",
         white: "#fff",
