@@ -6,18 +6,22 @@ const Welcome = () => {
   return (
     <div className="mt-40 flex items-center justify-center flex-col gap-3">
       <Image src="/assets/logo-up.png" width={266} height={15} alt="logo-up" />
-      <div className="relative w-[475px] h-[80px]">
-        <p className="absolute">awd</p>
-        <Image className="absolute left-10" src="/assets/logo-red-layer.png" fill alt="logo-red-layer" />
+      <div className="relative w-[475.22px] flex justify-center">
+        <div className="absolute w-full h-full flex items-center justify-center -z-10">
+          <Image className="" src="/assets/logo-red-layer.png" width={475.22} height={81.86} alt="logo-red-layer" />
+        </div>
+        <div className="absolute w-full h-full flex items-center justify-center z-10">
+          <p className="font-jibril text-6xl tracking-[0.415em] text-center indent-[0.415em] uppercase">v3rpg</p>
+        </div>
         <Image
-          className="absolute left-1 -top-1"
+          className=""
           src="/assets/logo-black-layer.png"
           alt="logo-black-layer"
-          width={463.5}
-          height={97}
+          width={463.51}
+          height={97.05}
         />
       </div>
-      <Image className="mt-4" src="/assets/logo-down.png" width={167} height={32} alt="logo-down" />
+      <Image className="mb-4" src="/assets/logo-down.png" width={167} height={32} alt="logo-down" />
       <div className="text-[24px] tracking-[0.2em] leading-[46px] uppercase">
         <p className="m-0 font-light">authentic ADVENTURES</p>
         <p className="m-0 font-extrabold">FULLY CURATED BY AI</p>
@@ -34,3 +38,4 @@ const Welcome = () => {
 };
 
 export default Welcome;
+
