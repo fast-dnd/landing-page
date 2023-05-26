@@ -11,6 +11,9 @@ module.exports = {
         'jibril': ['Jibril Regular', 'sans-serif'],
         'jost': ['Jost*', 'sans-serif'],
       },
+      boxShadow: {
+        'basic': '0px 4px 65px rgba(255, 90, 90, 0.25)',
+      },
       colors: {
         black: "#000",
         white: "#fff",
