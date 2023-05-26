@@ -6,9 +6,13 @@ const Intro = () => {
     <Image className="flex flex-shrink max-w-[40%]" src="/assets/helmet.png" width={576} height={729} alt="helmet" />
     <Image className="flex flex-shrink max-w-[40%]" src="/assets/dragon.png" width={576} height={729} alt="dragon" />
     <div className="absolute w-full h-full flex flex-col justify-center items-center gap-16">
-      <p className="text-2 text-center"><span className="text-tomato">CHAMPIONS</span> ARE FORGED & <span className="text-tomato">LEGENDS</span> ARE WRITTEN</p>
-      <hr/>
-      <p className="max-w-[800px] text-center text-3 font-light"><span className="font-bold">WELCOME</span> TO AN <span className="font-bold">EXCITING EXPERIENCE</span> FILLED WITH UNEXPECTED, BIZARRE ADVENTURES THAT ARE FULLY CURATED BY <span className="font-bold">AI</span> AND PERFORMED BY <span className="font-bold">YOU AND YOUR FRIENDS</span>.</p>
+      <p className="text-[28px] leading-[48px] tracking-[0.28rem] text-center uppercase"><span className="text-tomato">CHAMPIONS</span> ARE FORGED & <span className="text-tomato">LEGENDS</span> ARE WRITTEN</p>
+      <div className="flex flex-row gap-5 justify-center items-center">
+        <div className="w-[134px] h-0 border border-tomato"/>
+        <div className="w-[10px] h-3 rotate-45 bg-white" />
+        <div className="w-[134px] h-0 border border-tomato"/>
+      </div>
+      <p className="max-w-[800px] text-center text-xl leading-[46px] tracking-[0.25rem] uppercase font-light"><span className="font-bold">WELCOME</span> to An <span className="font-bold">exciting experience</span> filled with unexpected, bizarre adventures that are fully curated by <span className="font-bold">AI</span> and performed by <span className="font-bold">you and your friends</span>.</p>
     </div>
   </div>;
 };
