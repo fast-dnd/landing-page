@@ -1,15 +1,9 @@
+import { Metadata } from "next";
 import "./globals.css";
-import { Jost } from "next/font/google";
-import localFont from "next/font/local";
+import { jost } from "@/utils/fonts";
 
-export const jost = Jost({ subsets: ["latin"] });
-
-export const jibril = localFont({
-  src: "../../public/fonts/JibrilRegular.woff",
-});
-
-export const metadata = {
-  title: "FastDnd",
+export const metadata: Metadata = {
+  title: "V3RPG",
   description: "DnD App description...",
 };
 

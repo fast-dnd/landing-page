@@ -1,4 +1,4 @@
-import { jibril } from "@/app/layout";
+import { jibril } from "@/utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
