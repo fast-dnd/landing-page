@@ -1,3 +1,4 @@
+import { jibril } from "@/app/layout";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -11,15 +12,11 @@ const Welcome = () => {
           <Image className="" src="/assets/logo-red-layer.png" width={475.22} height={81.86} alt="logo-red-layer" />
         </div>
         <div className="absolute w-full h-full flex items-center justify-center z-10">
-          <p className="font-jibril text-6xl tracking-[0.415em] text-center indent-[0.415em] uppercase">v3rpg</p>
+          <p style={jibril.style} className="text-6xl tracking-[0.415em] text-center indent-[0.415em] uppercase">
+            v3rpg
+          </p>
         </div>
-        <Image
-          className=""
-          src="/assets/logo-black-layer.png"
-          alt="logo-black-layer"
-          width={463.51}
-          height={97.05}
-        />
+        <Image className="" src="/assets/logo-black-layer.png" alt="logo-black-layer" width={463.51} height={97.05} />
       </div>
       <Image className="mb-4" src="/assets/logo-down.png" width={167} height={32} alt="logo-down" />
       <div className="text-[24px] tracking-[0.2em] leading-[46px] uppercase">
@@ -38,4 +35,3 @@ const Welcome = () => {
 };
 
 export default Welcome;
-
