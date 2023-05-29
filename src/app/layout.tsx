@@ -4,7 +4,10 @@ import { jost } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "V3RPG",
-  description: "DnD App description...",
+  description: "AI powered RPG",
+  icons: {
+    icon: "/v3dnd.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
