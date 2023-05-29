@@ -8,4 +8,5 @@
 
 # Deployed version:
 
-[https://v3rpg.vercel.app/](https://v3rpg.vercel.app/)
+
+[https://landing-page-fast-dnd.vercel.app](https://landing-page-fast-dnd.vercel.app)
