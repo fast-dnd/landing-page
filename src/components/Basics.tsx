@@ -102,7 +102,7 @@ const Basics = () => {
             <p className="text-xl text-center uppercase tracking-[0.07em]">Are you ready?</p>
             <Link
               className="bg-tomato hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-3.5 px-[30px] text-gray-200 transition-all duration-300"
-              href="#"
+              href="https://v3rpg.fastdnd.net/"
             >
               <p className="relative tracking-[0.07em] text-2xl font-extrabold">GET STARTED</p>
             </Link>
