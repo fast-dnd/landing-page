@@ -25,7 +25,7 @@ const Welcome = () => {
         <p className="m-0 font-extrabold">FULLY CURATED BY AI</p>
       </div>
       <Link
-        className="mt-40 bg-tomato hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-3.5 px-[30px] text-gray-200 transition-all duration-300"
+        className="mt-40 bg-tomato hover:scale-110 hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-3.5 px-[30px] text-gray-200 transition-all duration-300"
         href="https://v3rpg.fastdnd.net/"
       >
         <p className="relative tracking-[0.07em] text-2xl font-extrabold">PLAY NOW</p>
