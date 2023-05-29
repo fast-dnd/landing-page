@@ -4,12 +4,13 @@ import Link from "next/link";
 import React from "react";
 
 const Basics = () => {
-  const shared = "flex flex-col z-10 relative w-[1030px] px-12 py-6 bg-gray-200 shadow-basic border-tomato";
+  const shared =
+    "flex flex-col z-10 relative w-[1030px] px-12 py-6 bg-gray-200 hover:shadow-basic border-tomato transition-all duration-300";
   return (
     <div className="w-full relative mt-20">
       <Image
         className="w-full absolute -z-20 max-h-[100%]"
-        src="/assets/bg-basics.png"
+        src="/images/bg-basics.png"
         alt="basics"
         width={1920}
         height={1840}
@@ -100,7 +101,7 @@ const Basics = () => {
           <div className="flex flex-col gap-4 items-center">
             <p className="text-xl text-center uppercase tracking-[0.07em]">Are you ready?</p>
             <Link
-              className="bg-tomato hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-3.5 px-[30px] text-gray-200"
+              className="bg-tomato hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-3.5 px-[30px] text-gray-200 transition-all duration-300"
               href="#"
             >
               <p className="relative tracking-[0.07em] text-2xl font-extrabold">GET STARTED</p>

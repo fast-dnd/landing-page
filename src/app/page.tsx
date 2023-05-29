@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="w-full">
       <div className="w-full relative">
-        <Image src="/assets/bg-welcome.png" alt="hero" width={1920} height={1080} className="-z-10 w-full h-[1080px]" />
+        <Image src="/images/bg-welcome.png" alt="hero" width={1920} height={1080} className="-z-10 w-full h-[1080px]" />
         <div className="absolute top-0 left-0 w-full h-full flex flex-col">
           <Header />
           <Welcome />
