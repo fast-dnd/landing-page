@@ -2,6 +2,7 @@ import { jibril } from "@/utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ScrollArrows from "./ScrollArrows";
 
 const Welcome = () => {
   return (
@@ -29,7 +30,7 @@ const Welcome = () => {
       >
         <p className="relative tracking-[0.07em] text-2xl font-extrabold">PLAY NOW</p>
       </Link>
-      <Image className="mt-20" src="/images/welcome-arrows-down.png" width={64} height={75} alt="welcome-arrows-down" />
+      <ScrollArrows />
     </div>
   );
 };
