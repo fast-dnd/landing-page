@@ -18,8 +18,8 @@ const Basics = () => {
       <div className="w-full flex flex-col items-center">
         <div className="mt-8 flex flex-col items-center gap-24">
           <div style={jibril.style} className="text-center leading-[60px] mb-2">
-            <p className="uppercase text-tomato text-[72px] tracking-[0.4em]">Master</p>
-            <p className="uppercase text-[32px] tracking-[0.18em] mt-2">the basics</p>
+            <p className="uppercase text-tomato text-[72px] tracking-[0.4em] indent-[0.4em]">Master</p>
+            <p className="uppercase text-[32px] tracking-[0.18em] indent-[0.18em] mt-2">the basics</p>
           </div>
           <div className={`${shared} border-l-4`}>
             <div className="flex flex-row items-center gap-1">
