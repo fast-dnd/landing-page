@@ -26,7 +26,7 @@ const Footer = () => {
       {footerLinks.map((link, index) => (
         <Fragment key={link.name}>
           <Link href={link.href}>
-            <p className="uppercase text-sm tracking-[0.07em] hover:font-semibold transition-all duration-300">
+            <p className="uppercase text-sm tracking-[0.07em] hover:underline underline-offset-4 transition-all duration-300">
               {link.name}
             </p>
           </Link>
