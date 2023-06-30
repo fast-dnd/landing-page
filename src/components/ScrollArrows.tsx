@@ -13,7 +13,7 @@ const ScrollArrows = () => {
 
   return (
     <Image
-      className="mt-20 cursor-pointer"
+      className="mt-20 cursor-pointer animate-bounce"
       src="/images/welcome-arrows-down.png"
       width={64}
       height={75}
