@@ -9,4 +9,4 @@
 # Deployed version:
 
 
-[https://landing-page-fast-dnd.vercel.app](https://landing-page-fast-dnd.vercel.app)
+[https://v3rpg-landing.fastdnd.net/](https://v3rpg-landing.fastdnd.net/)
