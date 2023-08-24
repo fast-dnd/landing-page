@@ -21,7 +21,7 @@ const Basics = () => {
           height={1840}
         />
         <div className="w-full flex flex-col items-center">
-          <div className="mt-8 flex flex-col items-center gap-24">
+          <div className="mt-8 flex flex-col items-center gap-24 cursor-default">
             <div style={jibril.style} className="text-center leading-[60px] mb-2 flex flex-col">
               <Fade
                 triggerOnce

@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  dnd-landing-page:
+    image: dnd-landing-page
+    build:
+      context: .
+      dockerfile: Dockerfile
+    init: true
+    ports:
+      - 3000:3000
+    restart: unless-stopped

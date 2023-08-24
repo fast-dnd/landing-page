@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "V3RPG",
   description: "AI powered RPG",
   icons: {
-    icon: "/v3dnd.png",
+    icon: "/v3dnd-logo.svg",
   },
 };
 
