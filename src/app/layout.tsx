@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import "./globals.css";
-import { jost } from "@/utils/fonts";
+import { lexend } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "V3RPG",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={jost.className}>{children}</body>
+      <body className={lexend.className}>{children}</body>
     </html>
   );
 }

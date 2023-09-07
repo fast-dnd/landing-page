@@ -24,7 +24,10 @@ const Intro = () => {
           alt="dragon"
         />
         <div className="absolute w-full h-full flex flex-col justify-center items-center gap-16" id="intro">
-          <p style={jibril.style} className="text-[28px] leading-[48px] tracking-[0.08em] text-center uppercase">
+          <p
+            style={jibril.style}
+            className="text-[28px] leading-[48px] tracking-[0.08em] text-center uppercase opacity-80"
+          >
             <span className="text-tomato">CHAMPIONS</span> ARE FORGED & <span className="text-tomato">LEGENDS</span> ARE
             WRITTEN
           </p>

@@ -26,7 +26,7 @@ const footerLinks = [
 const Footer = () => {
   return (
     <Fade duration={1500}>
-      <div className="w-full flex flex-row justify-center items-center bottom-0 h-[85px] border-t z-10 border-white gap-12">
+      <div className="mt-80 w-full flex flex-row justify-center items-center bottom-0 h-[85px] border-t z-10 border-white/70 gap-12">
         {footerLinks.map((link, index) => (
           <Fragment key={link.name}>
             <Link href={link.href}>

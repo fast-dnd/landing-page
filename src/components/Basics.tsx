@@ -7,8 +7,28 @@ import React from "react";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
 
 const Basics = () => {
-  const shared =
-    "flex flex-col z-10 relative w-[1030px] px-12 py-6 bg-gray-200 hover:shadow-basic border-tomato transition-all duration-300";
+  const cards = [
+    {
+      title: "Listen up!",
+      description:
+        "Our smart AI buddy will start things off by setting the scene. You might be in a spooky castle, a busy city, or even outer space! The AI will tell you everything you need to know. Who's in the room with you? What's that thing in the corner? Is that a treasure chest? So listen up, adventurers!",
+    },
+    {
+      title: "YOUR MOVE!",
+      description:
+        "Now, it's your turn to step up! Think about what your character should do based on what the AI just told you. Want to chat with that friendly-looking NPC over there? Go for it! Feel like inspecting that mysterious object? Why not! But remember, you can only do what's possible in the game world and what your character can actually do. So choose wisely!",
+    },
+    {
+      title: "Roll 'Em!",
+      description:
+        "So you've made your move. But how did it turn out? That's where our dice come in. The AI will use them to decide if your action was a big success or an epic fail. The fun part is, you never know how it'll turn out - every roll is a new adventure!",
+    },
+    {
+      title: "Rinse and Repeat!",
+      description:
+        "And there you have it. You'll keep listening, deciding, and rolling as you make your way through the game. But the most important thing of all? Have a blast with your friends, let your imagination run wild, and enjoy your epic adventure. Happy gaming!",
+    },
+  ];
 
   return (
     <Slide direction="right" triggerOnce>
@@ -21,7 +41,7 @@ const Basics = () => {
           height={1840}
         />
         <div className="w-full flex flex-col items-center">
-          <div className="mt-8 flex flex-col items-center gap-24 cursor-default">
+          <div className="mt-8 flex flex-col items-center gap-6 cursor-default">
             <div style={jibril.style} className="text-center leading-[60px] mb-2 flex flex-col">
               <Fade
                 triggerOnce
@@ -42,111 +62,37 @@ const Basics = () => {
                 the basics
               </Fade>
             </div>
-            <Slide direction="left" triggerOnce>
-              <div className={`${shared} border-l-4`}>
-                <div className="flex flex-row items-center gap-1">
-                  <div className="h-2 w-2 bg-tomato rotate-45" />
-                  <p
-                    style={jibril.style}
-                    className="uppercase text-[28px] leading-[48px] tracking-[0.5em] indent-[0.5em]"
-                  >
-                    READ
+            {cards.map((card, index) => (
+              <div
+                key={index}
+                className="flex w-3/5 mx-auto pl-16 pr-8 py-8 bg-gray-200 hover:shadow-basic transition-all duration-30 gap-16"
+              >
+                <div className="min-h-full flex items-center justify-center">
+                  <p style={jibril.style} className="text-7xl text-tomato [text-shadow:_0_0_18px_rgba(0,0,0,0.9)]">
+                    {index + 1}
                   </p>
-                  <div className="h-2 w-2 bg-tomato rotate-45" />
                 </div>
-                <p className="text-xl leading-10 tracking-[0.075em]">
-                  The AI describes the situation and environment in which the players find themselves. This includes
-                  details such as how many doors are in a room, what is on a table, who is in the tavern, etc. The AI
-                  can also describe the actions of non-player characters (NPCs) and how they interact with the players.
-                </p>
-                <div className="absolute right-0 top-0 h-full flex flex-row gap-8 items-center justify-end -z-10">
-                  <p style={jibril.style} className="text-9xl text-tomato [text-shadow:_0_0_18px_rgba(0,0,0,0.9)]">
-                    1
-                  </p>
-                  <div className="w-[1030px]" />
+                <div className="flex flex-col gap-4">
+                  <div className="flex flex-row items-center gap-4">
+                    <div className="h-2 w-2 bg-tomato rotate-45" />
+                    <p style={jibril.style} className="uppercase text-3xl leading-normal tracking-[2.8px]">
+                      {card.title}
+                    </p>
+                    <div className="h-2 w-2 bg-tomato rotate-45" />
+                  </div>
+                  <p className="text-xl leading-normal tracking-[1.5px]">{card.description}</p>
                 </div>
               </div>
-            </Slide>
-            <Slide direction="right" triggerOnce>
-              <div className={`${shared} border-r-4 items-end`}>
-                <div className="flex flex-row items-center gap-1">
-                  <div className="h-2 w-2 bg-tomato rotate-45" />
-                  <p
-                    style={jibril.style}
-                    className="uppercase text-[28px] leading-[48px] tracking-[0.5em] indent-[0.5em]"
-                  >
-                    DECIDE
-                  </p>
-                  <div className="h-2 w-2 bg-tomato rotate-45" />
-                </div>
-                <p className="text-xl leading-10 tracking-[0.075em] text-right">
-                  You must decide what your character does. You can do anything you can think of, as long as it is
-                  within the rules of the game and possible within the environment described by the AI. For example, you
-                  can decide to talk to an NPC, search for an object or attack an enemy.
-                </p>
-                <div className="absolute left-0 top-0 h-full flex flex-row gap-8 items-center -z-10">
-                  <div className="w-[1030px]" />
-                  <p style={jibril.style} className="text-9xl text-tomato [text-shadow:_0_0_18px_rgba(0,0,0,0.9)]">
-                    2
-                  </p>
-                </div>
-              </div>
-            </Slide>
-            <Slide direction="left" triggerOnce>
-              <div className={`${shared} border-l-4`}>
-                <div className="flex flex-row items-center gap-1">
-                  <div className="h-2 w-2 bg-tomato rotate-45" />
-                  <p
-                    style={jibril.style}
-                    className="uppercase text-[28px] leading-[48px] tracking-[0.5em] indent-[0.5em]"
-                  >
-                    ROLL
-                  </p>
-                  <div className="h-2 w-2 bg-tomato rotate-45" />
-                </div>
-                <p className="text-xl leading-10 tracking-[0.075em]">
-                  The AI describes the result of your character&apos;s actions. To determine whether an action is
-                  successful or not, 2 dice are used. The number determined by the sum of both dice decides your luck.
-                </p>
-                <div className="absolute right-0 top-0 h-full flex flex-row gap-8 items-center justify-end -z-10">
-                  <p style={jibril.style} className="text-9xl text-tomato [text-shadow:_0_0_18px_rgba(0,0,0,0.9)]">
-                    3
-                  </p>
-                  <div className="w-[1030px]" />
-                </div>
-              </div>
-            </Slide>
-            <Slide direction="right" triggerOnce>
-              <div className={`${shared} border-r-4 items-end`}>
-                <div className="absolute left-0 top-0 h-full flex flex-row gap-8 items-center -z-10">
-                  <div className="w-[1030px]" />
-                  <p style={jibril.style} className="text-9xl text-tomato [text-shadow:_0_0_18px_rgba(0,0,0,0.9)]">
-                    4
-                  </p>
-                </div>
-                <div className="flex flex-row items-center gap-1">
-                  <div className="h-2 w-2 bg-tomato rotate-45" />
-                  <p
-                    style={jibril.style}
-                    className="uppercase text-[28px] leading-[48px] tracking-[0.5em] indent-[0.5em]"
-                  >
-                    REPEAT
-                  </p>
-                  <div className="h-2 w-2 bg-tomato rotate-45" />
-                </div>
-                <p className="text-xl leading-10 tracking-[0.075em] text-right">
-                  And most importantly... Have fun with your friends immersing yourself in fantastic stories!
-                </p>
-              </div>
-            </Slide>
+            ))}
+
             <Zoom triggerOnce>
-              <div className="flex flex-col gap-4 items-center">
-                <p className="text-xl text-center uppercase tracking-[0.07em]">Are you ready?</p>
+              <div className="mt-40 flex flex-col gap-4 items-center">
+                <p className="text-3xl text-center uppercase tracking-[2.8px]">Are you ready?</p>
                 <Link
-                  className="bg-tomato hover:scale-105 hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-3.5 px-[30px] text-gray-200 transition-all duration-300"
+                  className="mt-10 bg-tomato hover:scale-105 hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-4 px-24 text-gray-200 transition-all duration-300 rounded-md"
                   href="https://v3rpg.fastdnd.net/"
                 >
-                  <p className="relative tracking-[0.07em] text-2xl font-extrabold">GET STARTED</p>
+                  <p className="relative tracking-widest text-xl font-extrabold">PLAY NOW</p>
                 </Link>
               </div>
             </Zoom>
