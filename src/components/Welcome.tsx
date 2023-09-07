@@ -15,7 +15,7 @@ const Welcome = () => {
           <Image src="/images/logo.png" width={745} height={388} alt="logo" />
         </Fade>
       </Slide>
-      <div className="-mt-6 text-5xl leading-normal tracking-[9.6px] uppercase flex flex-col">
+      <div className="-mt-6 text-2xl md:text-5xl leading-normal md:tracking-[9.6px] uppercase flex flex-col">
         <Fade triggerOnce cascade damping={0.1} delay={1600} className="m-0 font-light">
           AUTHENTIC ADVENTURES
         </Fade>
@@ -25,7 +25,7 @@ const Welcome = () => {
       </div>
       <Fade triggerOnce delay={4500}>
         <Link
-          className="mt-40 bg-tomato hover:scale-105 hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-4 px-24 text-gray-200 transition-all duration-300 rounded-md"
+          className="mt-20 md:mt-40 bg-tomato hover:scale-105 hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-4 px-24 text-gray-200 transition-all duration-300 rounded-md"
           href="https://v3rpg.fastdnd.net/"
         >
           <p className="relative tracking-widest text-xl font-extrabold">PLAY NOW</p>

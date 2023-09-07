@@ -7,8 +7,8 @@ import { Slide } from "react-awesome-reveal";
 const Header = () => {
   return (
     <Slide direction="right" triggerOnce>
-      <div className="w-full flex flex-col items-center justify-end text-lg mt-16">
-        <div className="w-full flex flex-row items-center justify-end gap-10 mr-24">
+      <div className="w-full flex flex-col items-center justify-end text-base md:text-lg mt-12 md:mt-16">
+        <div className="w-full flex flex-row items-center justify-center md:justify-end gap-4 md:gap-10 md:mr-24">
           <Link
             href="#"
             className="relative tracking-[0.07em] font-semibold hover:underline underline-offset-4 transition-all  duration-300"
