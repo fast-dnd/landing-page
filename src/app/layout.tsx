@@ -5,14 +5,14 @@ import { lexend } from "@/utils/fonts";
 export const metadata: Metadata = {
   metadataBase: new URL("https://landing.v3rpg.com/"),
   title: "v3RPG",
-  description: "Bringing gamification to storytelling. Powered by AI.",
+  description: "Bringing gamification to storytelling.",
   icons: {
     icon: "/v3dnd-logo.svg",
   },
   openGraph: {
     images: ["/v3dnd-logo.png"],
     title: "v3RPG",
-    description: "Bringing gamification to storytelling. Powered by AI.",
+    description: "Bringing gamification to storytelling.",
   },
 };
 
