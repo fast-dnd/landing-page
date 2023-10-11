@@ -9,4 +9,4 @@
 # Deployed version:
 
 
-[https://v3rpg-landing.fastdnd.net/](https://v3rpg-landing.fastdnd.net/)
+[https://landing.v3rpg.com/](https://landing.v3rpg.com/)
