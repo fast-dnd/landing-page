@@ -7,7 +7,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 const footerLinks = [
   {
     name: "Join our discord",
-    href: "https://discord.gg/KSpPT6SU",
+    href: "https://discord.com/invite/36chp8DnzC",
   },
   {
     name: "Privacy policy",

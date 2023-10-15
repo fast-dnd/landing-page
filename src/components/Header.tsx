@@ -17,7 +17,7 @@ const Header = () => {
           </Link>
           <div className="relative bg-white w-[5.71px] h-[5.71px] [transform:_rotate(-45deg)]" />
           <Link
-            href="https://discord.gg/KSpPT6SU"
+            href="https://discord.com/invite/36chp8DnzC"
             className="relative tracking-[0.07em] font-semibold hover:underline underline-offset-4 transition-all duration-300"
           >
             JOIN US ON DISCORD
