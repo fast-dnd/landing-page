@@ -1,4 +1,4 @@
-import { Jost, Lexend } from "next/font/google";
+import { Lexend } from "next/font/google";
 import localFont from "next/font/local";
 
 export const lexend = Lexend({ subsets: ["latin"] });

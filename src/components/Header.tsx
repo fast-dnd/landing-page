@@ -2,11 +2,9 @@
 
 import Link from "next/link";
 import React from "react";
-import { Slide } from "react-awesome-reveal";
 
 const Header = () => {
   return (
-    <Slide direction="right" triggerOnce>
       <div className="w-full flex flex-col items-center justify-end text-base md:text-lg mt-12 md:mt-16">
         <div className="w-full flex flex-row items-center justify-center md:justify-end gap-4 md:gap-10 md:mr-24">
           <Link
@@ -24,7 +22,6 @@ const Header = () => {
           </Link>
         </div>
       </div>
-    </Slide>
   );
 };
 

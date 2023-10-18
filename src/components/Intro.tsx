@@ -3,11 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import { jibril } from "@/utils/fonts";
-import { Fade, Slide } from "react-awesome-reveal";
 
 const Intro = () => {
   return (
-    <Slide triggerOnce>
       <div className="flex flex-row relative justify-between bg-black w-full">
         <Image
           className="max-md:invisible flex flex-shrink max-w-[40%]"
@@ -43,7 +41,6 @@ const Intro = () => {
           </p>
         </div>
       </div>
-    </Slide>
   );
 };
 

@@ -4,7 +4,6 @@ import { jibril } from "@/utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
 
 const Basics = () => {
   const cards = [
@@ -42,27 +41,19 @@ const Basics = () => {
       <div className="w-full flex flex-col items-center">
         <div className="mt-12 flex flex-col items-center gap-6 cursor-default">
           <div style={jibril.style} className="text-center leading-[60px] mb-2 flex flex-col md:gap-8">
-            <Fade
-              triggerOnce
-              cascade
-              damping={0.1}
-              delay={500}
+            <div
               className="uppercase text-tomato text-3xl md:text-[72px] tracking-[0.4em] indent-[0.4em]"
             >
               Master
-            </Fade>
-            <Fade
-              triggerOnce
-              cascade
-              damping={0.03}
-              delay={1000}
+            </div>
+            <div
               className="uppercase text-base md:text-[32px] tracking-[0.18em] indent-[0.18em] mt-2"
             >
               the basics
-            </Fade>
+            </div>
           </div>
           {cards.map((card, index) => (
-            <Slide key={index} direction={index % 2 === 0 ? "left" : "right"} triggerOnce>
+            <>
               <div className="flex w-[90%] md:w-3/5 mx-auto p-6 md:pl-16 md:pr-8 md:py-8 bg-gray-200 hover:shadow-basic transition-all duration-30 gap-16">
                 <div className="hidden md:flex min-h-full items-center justify-center">
                   <p style={jibril.style} className="text-7xl text-tomato [text-shadow:_0_0_18px_rgba(0,0,0,0.9)]">
@@ -83,10 +74,9 @@ const Basics = () => {
                   <p className="text-sm md:text-xl leading-normal tracking-[1.5px]">{card.description}</p>
                 </div>
               </div>
-            </Slide>
+              </>
           ))}
 
-          <Zoom triggerOnce>
             <div className="mt-12 md:mt-40 flex flex-col gap-4 items-center">
               <p className="text-3xl text-center uppercase tracking-[2.8px]">Are you ready?</p>
               <Link
@@ -96,7 +86,6 @@ const Basics = () => {
                 <p className="relative tracking-widest text-xl font-extrabold">PLAY NOW</p>
               </Link>
             </div>
-          </Zoom>
           <div className="h-4"></div>
         </div>
       </div>
