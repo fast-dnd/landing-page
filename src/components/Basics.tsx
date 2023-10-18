@@ -8,29 +8,34 @@ import React from "react";
 const Basics = () => {
   const cards = [
     {
-      title: "Listen up!",
+      title: "MEET OUR DM",
       description:
-        "Our smart AI buddy will start things off by setting the scene. You might be in a spooky castle, a busy city, or even outer space! The AI will tell you everything you need to know. Who's in the room with you? What's that thing in the corner? Is that a treasure chest? So listen up, adventurers!",
+        "The adventures you will play are created by the players and further developed by our AI dungeon master, Bob. All the scenes, playable and NPC characters, and plots are preset by the player, while Bob pushes the story further and makes it exciting until the very end. Choose one of the adventures from the list and dive into the unknown.",
     },
     {
-      title: "YOUR MOVE!",
+      title: "CHOOSE THE CHARACTER",
       description:
-        "Now, it's your turn to step up! Think about what your character should do based on what the AI just told you. Want to chat with that friendly-looking NPC over there? Go for it! Feel like inspecting that mysterious object? Why not! But remember, you can only do what's possible in the game world and what your character can actually do. So choose wisely!",
+        "Once inside the adventure, you will have the opportunity to select one of the playable characters whose role you will assume within the story. Choose wisely, as the character's traits and background will influence the outcome of your actions and decisions. Invite your friends and have them choose one of the other characters so you can all enjoy a unique multiplayer experience.",
     },
     {
-      title: "Roll 'Em!",
+      title: "CHOOSE YOUR ACTION",
       description:
-        "So you've made your move. But how did it turn out? That's where our dice come in. The AI will use them to decide if your action was a big success or an epic fail. The fun part is, you never know how it'll turn out - every roll is a new adventure!",
+        "You can either take free will actions, allowing you to type in any action for your character to perform, or you can opt for one of the default moves to influence your character's stats. Be cautious! This is a unique storytelling game where you can gain or lose health, and your character might even die as a result of your choices, when the story concludes.",
     },
     {
-      title: "Rinse and Repeat!",
+      title: "ROLL ‘EM",
       description:
-        "And there you have it. You'll keep listening, deciding, and rolling as you make your way through the game. But the most important thing of all? Have a blast with your friends, let your imagination run wild, and enjoy your epic adventure. Happy gaming!",
+        "After choosing your action, you roll the dice. This is where the fun begins! Depending on the dice roll, you might either succeed or fail in your action. Did you want to pilot the plane to the next location? Rolled less than 5? It's not going to end well for you and your crew. Did you want to look around? Rolled a 12? Excellent, you've found a huge hint for the next scene.",
+    },
+    {
+      title: "ASK BOB",
+      description:
+        "One unique feature of our game is the option to communicate with Bob by asking him questions. Not satisfied with the direction the adventure is taking? Ask Bob to make adjustments, and he will. Need additional information about an NPC character or mysterious lights in the night? Just ask Bob, and he will provide you with truthful and useful information.",
     },
   ];
 
   return (
-    <div className="w-full relative mt-20">
+    <div className="w-full relative mt-80">
       <Image
         className="w-full absolute -z-20 max-h-[100%]"
         src="/images/bg-basics.png"
@@ -40,23 +45,25 @@ const Basics = () => {
       />
       <div className="w-full flex flex-col items-center">
         <div className="mt-12 flex flex-col items-center gap-6 cursor-default">
-          <div style={jibril.style} className="text-center leading-[60px] mb-2 flex flex-col md:gap-8">
-            <div
-              className="uppercase text-tomato text-3xl md:text-[72px] tracking-[0.4em] indent-[0.4em]"
-            >
+          <div
+            style={jibril.style}
+            className="text-center leading-[60px] mb-2 flex flex-col md:gap-8"
+          >
+            <div className="uppercase text-tomato text-3xl md:text-[72px] tracking-[0.4em] indent-[0.4em]">
               Master
             </div>
-            <div
-              className="uppercase text-base md:text-[32px] tracking-[0.18em] indent-[0.18em] mt-2"
-            >
+            <div className="uppercase text-base md:text-[32px] tracking-[0.18em] indent-[0.18em] mt-2">
               the basics
             </div>
           </div>
           {cards.map((card, index) => (
             <>
-              <div className="flex w-[90%] md:w-3/5 mx-auto p-6 md:pl-16 md:pr-8 md:py-8 bg-gray-200 hover:shadow-basic transition-all duration-30 gap-16">
+              <div className="flex w-[90%] md:w-3/5 mx-auto p-6 md:pl-16 md:pr-8 md:py-8 bg-gray-200 hover:shadow-basic transition-all duration-30 gap-16 rounded-md">
                 <div className="hidden md:flex min-h-full items-center justify-center">
-                  <p style={jibril.style} className="text-7xl text-tomato [text-shadow:_0_0_18px_rgba(0,0,0,0.9)]">
+                  <p
+                    style={jibril.style}
+                    className="text-7xl text-tomato [text-shadow:_0_0_18px_rgba(0,0,0,0.9)]"
+                  >
                     {index + 1}
                   </p>
                 </div>
@@ -71,21 +78,27 @@ const Basics = () => {
                     </p>
                     <div className="h-2 w-2 bg-tomato rotate-45" />
                   </div>
-                  <p className="text-sm md:text-xl leading-normal tracking-[1.5px]">{card.description}</p>
+                  <p className="text-sm md:text-xl leading-normal tracking-[1.5px]">
+                    {card.description}
+                  </p>
                 </div>
               </div>
-              </>
+            </>
           ))}
 
-            <div className="mt-12 md:mt-40 flex flex-col gap-4 items-center">
-              <p className="text-3xl text-center uppercase tracking-[2.8px]">Are you ready?</p>
-              <Link
-                className="mt-4 md:mt-10 bg-tomato hover:scale-105 hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-4 px-24 text-gray-200 transition-all duration-300 rounded-md"
-                href="https://play.v3rpg.com/"
-              >
-                <p className="relative tracking-widest text-xl font-extrabold">PLAY NOW</p>
-              </Link>
-            </div>
+          <div className="mt-12 md:mt-40 flex flex-col gap-4 items-center">
+            <p className="text-3xl text-center uppercase tracking-[2.8px]">
+              Are you ready?
+            </p>
+            <Link
+              className="mt-4 md:mt-10 bg-tomato hover:scale-105 hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-4 px-24 text-gray-200 transition-all duration-300 rounded-md"
+              href="https://play.v3rpg.com/"
+            >
+              <p className="relative tracking-widest text-xl font-extrabold">
+                PLAY NOW
+              </p>
+            </Link>
+          </div>
           <div className="h-4"></div>
         </div>
       </div>

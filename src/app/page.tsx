@@ -2,6 +2,7 @@ import Basics from "@/components/Basics";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Intro from "@/components/Intro";
+import VideoAndScreenshots from "@/components/VideoAndScreenshots";
 import Welcome from "@/components/Welcome";
 import Image from "next/image";
 
@@ -16,6 +17,7 @@ export default function Home() {
         </div>
       </div>
       <Intro />
+      <VideoAndScreenshots />
       <Basics />
       <Footer />
     </main>
