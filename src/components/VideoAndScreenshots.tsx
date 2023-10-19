@@ -20,7 +20,8 @@ const VideoAndScreenshots = () => {
       >
         SEE V3RPG <span className="text-tomato"> IN ACTION</span>
       </p>
-      <ReactPlayer url="https://www.youtube.com/watch?v=fnC5INxQS1M" /></div>
+      <ReactPlayer url="https://www.youtube.com/watch?v=fnC5INxQS1M" />
+      </div>
       
       <div className="flex justify-center px-8 w-full"><div
         className="mt-64 w-full aspect-[1.225] xl:w-[1280px] xl:h-[1320px] relative"
@@ -35,10 +36,6 @@ const VideoAndScreenshots = () => {
         <Image unoptimized draggable={false} quality={100} alt="" src="/images/sc4.png" width={768} height={432} className="w-full xl:w-[768px] xl:h-[432px] rounded-lg xl:rounded-[32px]" />
 
         </div>
-        {/* <Image alt="" src="/images/sc1.png" width={768} height={432} className="absolute w-full xl:w-[768px] xl:h-[432px] rounded-[32px]" />
-        <Image alt="" src="/images/sc2.png" width={768} height={432} className="absolute w-full xl:w-[768px] xl:h-[432px] rounded-[32px]" />
-        <Image alt="" src="/images/sc3.png" width={768} height={432} className="absolute w-full xl:w-[768px] xl:h-[432px] rounded-[32px]" />
-        <Image alt="" src="/images/sc4.png" width={768} height={432} className="absolute w-full xl:w-[768px] xl:h-[432px] rounded-[32px]" /> */}
 
       </div></div>
       
