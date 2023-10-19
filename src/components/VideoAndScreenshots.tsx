@@ -2,7 +2,7 @@
 import { jibril } from "@/utils/fonts";
 import Image from "next/image";
 import React from "react";
-import ReactPlayer from "react-player";
+import YouTube from "react-youtube";
 
 const VideoAndScreenshots = () => {
   return (
@@ -20,7 +20,7 @@ const VideoAndScreenshots = () => {
       >
         SEE V3RPG <span className="text-tomato"> IN ACTION</span>
       </p>
-      <ReactPlayer url="https://www.youtube.com/watch?v=fnC5INxQS1M" />
+      <YouTube videoId="fnC5INxQS1M" />
       </div>
       
       <div className="flex justify-center px-8 w-full"><div
