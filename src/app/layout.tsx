@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     icon: "/v3dnd-logo.svg",
   },
   openGraph: {
-    images: ["/images/logo.png"],
+    images: ["/images/og-logo.png"],
     title: "v3RPG",
     description: "Bringing gamification to storytelling.",
   },
