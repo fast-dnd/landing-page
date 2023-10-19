@@ -35,7 +35,7 @@ const Basics = () => {
   ];
 
   return (
-    <div className="w-full relative mt-80">
+    <div className="w-full relative mt-64 xl:mt-80">
       <Image
         className="w-full absolute -z-20 max-h-[100%]"
         src="/images/bg-basics.png"
@@ -47,19 +47,19 @@ const Basics = () => {
         <div className="mt-12 flex flex-col items-center gap-6 cursor-default">
           <div
             style={jibril.style}
-            className="text-center leading-[60px] mb-2 flex flex-col md:gap-8"
+            className="text-center leading-[60px] mb-2 flex flex-col xl:gap-8"
           >
-            <div className="uppercase text-tomato text-3xl md:text-[72px] tracking-[0.4em] indent-[0.4em]">
+            <div className="uppercase text-tomato text-3xl xl:text-[72px] tracking-[0.4em] indent-[0.4em]">
               Master
             </div>
-            <div className="uppercase text-base md:text-[32px] tracking-[0.18em] indent-[0.18em] mt-2">
+            <div className="uppercase text-base xl:text-[32px] tracking-[0.18em] indent-[0.18em] mt-2">
               the basics
             </div>
           </div>
           {cards.map((card, index) => (
-            <>
-              <div className="flex w-[90%] md:w-3/5 mx-auto p-6 md:pl-16 md:pr-8 md:py-8 bg-gray-200 hover:shadow-basic transition-all duration-30 gap-16 rounded-md">
-                <div className="hidden md:flex min-h-full items-center justify-center">
+            <React.Fragment key={index}>
+              <div className="flex w-[90%] xl:w-3/5 mx-auto p-6 xl:pl-16 xl:pr-8 xl:py-8 bg-gray-200 hover:shadow-basic transition-all duration-30 gap-16 rounded-md">
+                <div className="hidden xl:flex min-h-full items-center justify-center">
                   <p
                     style={jibril.style}
                     className="text-7xl text-tomato [text-shadow:_0_0_18px_rgba(0,0,0,0.9)]"
@@ -83,7 +83,7 @@ const Basics = () => {
                   </p>
                 </div>
               </div>
-            </>
+            </React.Fragment>
           ))}
 
           <div className="mt-12 md:mt-40 flex flex-col gap-4 items-center">
@@ -91,12 +91,10 @@ const Basics = () => {
               Are you ready?
             </p>
             <Link
-              className="mt-4 md:mt-10 bg-tomato hover:scale-105 hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-4 px-24 text-gray-200 transition-all duration-300 rounded-md"
+              className="mt-4 md:mt-10 bg-tomato hover:scale-105 hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-4 tracking-widest text-xl font-extrabold px-24 text-gray-200 transition-all duration-300 rounded-md"
               href="https://play.v3rpg.com/"
             >
-              <p className="relative tracking-widest text-xl font-extrabold">
                 PLAY NOW
-              </p>
             </Link>
           </div>
           <div className="h-4"></div>

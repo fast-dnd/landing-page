@@ -6,8 +6,8 @@ import ReactPlayer from "react-player";
 
 const VideoAndScreenshots = () => {
   return (
-    <div className="max-md:mt-32 flex items-center flex-col gap-4 md:gap-16 relative">
-      <Image
+    <div className="max-md:mt-32 mt-4 flex items-center flex-col relative">
+      <div className="flex items-center flex-col gap-4 md:gap-16"><Image
         className="absolute w-full h-auto -z-10"
         src="/images/bg-video-sc.png"
         alt="basics"
@@ -20,57 +20,28 @@ const VideoAndScreenshots = () => {
       >
         SEE V3RPG <span className="text-tomato"> IN ACTION</span>
       </p>
-      <ReactPlayer url="https://www.youtube.com/watch?v=fnC5INxQS1M" />
-
-      <div
-        className="mt-64"
-        style={{ width: 1280, height: 1320, position: "relative" }}
+      <ReactPlayer url="https://www.youtube.com/watch?v=fnC5INxQS1M" /></div>
+      
+      <div className="flex justify-center px-8 w-full"><div
+        className="mt-64 w-full aspect-[1.225] xl:w-[1280px] xl:h-[1320px] relative"
       >
-        <img
-          style={{
-            width: 768,
-            height: 432,
-            left: 0,
-            top: 0,
-            position: "absolute",
-            borderRadius: 32,
-          }}
-          src="/images/sc1.png"
-        />
-        <img
-          style={{
-            width: 768,
-            height: 432,
-            left: 512,
-            top: 296,
-            position: "absolute",
-            borderRadius: 32,
-          }}
-          src="/images/sc2.png"
-        />
-        <img
-          style={{
-            width: 768,
-            height: 432,
-            left: 0,
-            top: 592,
-            position: "absolute",
-            borderRadius: 32,
-          }}
-          src="/images/sc3.png"
-        />
-        <img
-          style={{
-            width: 768,
-            height: 432,
-            left: 512,
-            top: 888,
-            position: "absolute",
-            borderRadius: 32,
-          }}
-          src="/images/sc4.png"
-        />
-      </div>
+        <div className="absolute w-3/5 left-0 top-0 flex flex-col gap-10 md:gap-14 lg:gap-24 xl:gap-40">
+        <Image unoptimized draggable={false} quality={100} alt="" src="/images/sc1.png" width={768} height={432} className="w-full xl:w-[768px] xl:h-[432px] rounded-lg xl:rounded-[32px]" />
+        <Image unoptimized draggable={false} quality={100} alt="" src="/images/sc3.png" width={768} height={432} className="w-full xl:w-[768px] xl:h-[432px] rounded-lg xl:rounded-[32px]" />
+
+        </div>
+        <div className="absolute w-3/5 right-0 top-[15%] xl:top-[296px] flex flex-col gap-10 md:gap-14 lg:gap-24 xl:gap-40">
+        <Image unoptimized draggable={false} quality={100} alt="" src="/images/sc2.png" width={768} height={432} className="w-full xl:w-[768px] xl:h-[432px] rounded-lg xl:rounded-[32px]" />
+        <Image unoptimized draggable={false} quality={100} alt="" src="/images/sc4.png" width={768} height={432} className="w-full xl:w-[768px] xl:h-[432px] rounded-lg xl:rounded-[32px]" />
+
+        </div>
+        {/* <Image alt="" src="/images/sc1.png" width={768} height={432} className="absolute w-full xl:w-[768px] xl:h-[432px] rounded-[32px]" />
+        <Image alt="" src="/images/sc2.png" width={768} height={432} className="absolute w-full xl:w-[768px] xl:h-[432px] rounded-[32px]" />
+        <Image alt="" src="/images/sc3.png" width={768} height={432} className="absolute w-full xl:w-[768px] xl:h-[432px] rounded-[32px]" />
+        <Image alt="" src="/images/sc4.png" width={768} height={432} className="absolute w-full xl:w-[768px] xl:h-[432px] rounded-[32px]" /> */}
+
+      </div></div>
+      
     </div>
   );
 };
