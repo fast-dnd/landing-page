@@ -37,11 +37,18 @@ const Basics = () => {
   return (
     <div className="w-full relative mt-64 xl:mt-80">
       <Image
-        className="w-full absolute -z-20 max-h-[100%]"
+        className="max-md:hidden w-full absolute -z-20 max-h-[100%]"
         src="/images/bg-basics.png"
         alt="basics"
         width={1920}
         height={1840}
+      />
+      <Image
+        className="w-full md:hidden absolute -z-20 max-h-[100%]"
+        src="/images/bg-basics-mobile.png"
+        alt="basics"
+        width={390}
+        height={1161}
       />
       <div className="w-full flex flex-col items-center">
         <div className="mt-12 flex flex-col items-center gap-6 cursor-default">
@@ -72,7 +79,7 @@ const Basics = () => {
                     <div className="h-2 w-2 bg-tomato rotate-45" />
                     <p
                       style={jibril.style}
-                      className="uppercase text-xl whitespace-nowrap md:text-3xl leading-normal tracking-[2.8px]"
+                      className="uppercase text-xl md:text-3xl leading-normal tracking-[2.8px]"
                     >
                       {card.title}
                     </p>
@@ -94,8 +101,11 @@ const Basics = () => {
               className="mt-4 md:mt-10 bg-tomato hover:scale-105 hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-4 tracking-widest text-xl font-extrabold px-24 text-gray-200 transition-all duration-300 rounded-md"
               href="https://play.v3rpg.com/"
             >
-                PLAY NOW
+              PLAY NOW
             </Link>
+            <p className="opacity-50 text-sm mt-2">
+              Available on desktop. Mobile coming soon.
+            </p>
           </div>
           <div className="h-4"></div>
         </div>
