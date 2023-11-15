@@ -16,9 +16,8 @@ const Welcome = () => {
         className="mt-20 md:mt-40 bg-tomato hover:scale-105 tracking-widest text-xl font-extrabold hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-4 px-24 text-gray-200 transition-all duration-300 rounded-md"
         href="https://play.v3rpg.com/"
       >
-          PLAY NOW
+        PLAY NOW
       </Link>
-      <p className="opacity-50 text-sm mt-2">Available on desktop. Mobile coming soon.</p>
     </div>
   );
 };

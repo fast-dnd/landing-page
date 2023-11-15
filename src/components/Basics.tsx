@@ -103,9 +103,6 @@ const Basics = () => {
             >
               PLAY NOW
             </Link>
-            <p className="opacity-50 text-sm mt-2">
-              Available on desktop. Mobile coming soon.
-            </p>
           </div>
           <div className="h-4"></div>
         </div>
