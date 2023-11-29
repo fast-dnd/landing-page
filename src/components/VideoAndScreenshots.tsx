@@ -30,7 +30,7 @@ const VideoAndScreenshots = () => {
         </p>
         <YouTube
           iframeClassName="max-md:w-80 max-md:h-[183px]"
-          videoId="fnC5INxQS1M"
+          videoId="eNGYglAsoc0"
         />
       </div>
 

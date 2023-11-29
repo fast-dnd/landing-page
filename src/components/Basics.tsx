@@ -100,6 +100,7 @@ const Basics = () => {
             <Link
               className="mt-4 md:mt-10 bg-tomato hover:scale-105 hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-4 tracking-widest text-xl font-extrabold px-24 text-gray-200 transition-all duration-300 rounded-md"
               href="https://play.v3rpg.com/"
+              target="_blank"
             >
               PLAY NOW
             </Link>
