@@ -8,18 +8,18 @@ const footerLinks = [
     name: "Join our discord",
     href: "https://discord.com/invite/36chp8DnzC",
   },
-  {
-    name: "Privacy policy",
-    href: "#",
-  },
-  {
-    name: "Terms of service",
-    href: "#",
-  },
-  {
-    name: "© 2023 V3RPG",
-    href: "#",
-  },
+  // {
+  //   name: "Privacy policy",
+  //   href: "#",
+  // },
+  // {
+  //   name: "Terms of service",
+  //   href: "#",
+  // },
+  // {
+  //   name: "© 2023 V3RPG",
+  //   href: "#",
+  // },
 ];
 
 const Footer = () => {
