@@ -8,10 +8,10 @@ const footerLinks = [
     name: "Join our discord",
     href: "https://discord.com/invite/36chp8DnzC",
   },
-  // {
-  //   name: "Privacy policy",
-  //   href: "#",
-  // },
+  {
+    name: "Privacy policy",
+    href: "/privacy-policy",
+  },
   // {
   //   name: "Terms of service",
   //   href: "#",
