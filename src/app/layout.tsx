@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import "./globals.css";
 import { lexend } from "@/utils/fonts";
+import HotjarAnalytics from "@/components/HotjarAnalytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://landing.v3rpg.com/"),
@@ -23,6 +24,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <HotjarAnalytics />
+
       <body className={lexend.className}>{children}</body>
     </html>
   );
