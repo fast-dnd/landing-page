@@ -24,7 +24,7 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <div className="mt-12 md:mt-80 w-full flex flex-col md:flex-row justify-center items-center bottom-0 md:h-[85px] border-t z-10 border-white/70 gap-4 md:gap-12 py-4">
+    <div className=" w-full flex flex-col md:flex-row justify-center items-center bottom-0 md:h-[85px] border-t z-10 border-white/70 gap-4 md:gap-12 py-4">
       {footerLinks.map((link, index) => (
         <Fragment key={link.name}>
           <Link
