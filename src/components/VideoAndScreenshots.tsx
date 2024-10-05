@@ -6,7 +6,7 @@ import YouTube from "react-youtube";
 
 const VideoAndScreenshots = () => {
   return (
-    <div className="max-md:mt-32 mt-4 flex items-center flex-col relative">
+    <div className=" mt-40 flex items-center flex-col relative">
       <div className="flex items-center flex-col gap-4 md:gap-16">
         <Image
           className="max-md:hidden absolute w-full h-auto -z-10"
@@ -30,12 +30,11 @@ const VideoAndScreenshots = () => {
         </p>
         <YouTube
           iframeClassName="max-md:w-80 max-md:h-[183px]"
-          videoId="eNGYglAsoc0"
+          videoId="4EmRFbdliY4"
         />
       </div>
-
       <div className="flex justify-center px-8 w-full">
-        <div className="mt-64 w-full aspect-[1.225] xl:w-[1280px] xl:h-[1320px] relative">
+        <div className="mt-20 w-full aspect-[1.225] xl:w-[1280px] xl:h-[1320px] relative">
           <div className="absolute w-3/5 left-0 top-0 flex flex-col gap-10 md:gap-14 lg:gap-24 xl:gap-40">
             <Image
               draggable={false}
