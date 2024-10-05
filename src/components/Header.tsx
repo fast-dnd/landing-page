@@ -7,7 +7,7 @@ import { DiscordLogo, InstagramLogo, TwitterLogo } from "@phosphor-icons/react";
 const Header = () => {
   return (
     <header
-      className="w-full flex flex-col items-center justify-end text-base md:text-lg mt-12 md:mt-16"
+      className="hidden md:flex w-full flex-col items-center justify-end text-base md:text-lg mt-12 md:mt-16"
       role="navigation"
     >
       <div className="w-full flex flex-row items-center justify-center md:justify-end gap-4 md:gap-10 md:mr-24">

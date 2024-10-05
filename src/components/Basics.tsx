@@ -35,7 +35,7 @@ const Basics = () => {
 
   return (
     <section
-      className="w-full relative mt-64 xl:mt-80"
+      className="w-full relative mt-16 md:mt-40 px-4"
       aria-labelledby="basics-heading"
     >
       <Image
@@ -53,44 +53,44 @@ const Basics = () => {
         height={1161}
       />
       <div className="w-full flex flex-col items-center">
-        <div className="mt-12 flex flex-col items-center gap-6 cursor-default">
+        <div className="mt-8 md:mt-12 flex flex-col items-center gap-4 md:gap-6 cursor-default">
           <div
             style={jibril.style}
-            className="text-center leading-[40px] mb-2 flex flex-col xl:gap-4"
+            className="text-center leading-[30px] md:leading-[40px] mb-4 md:mb-2 flex flex-col gap-2 md:gap-4"
           >
             <h2
               id="basics-heading"
-              className="uppercase text-tomato text-8xl tracking-[0.1em]"
+              className="uppercase text-tomato text-4xl md:text-6xl tracking-[0.1em]"
             >
               Master
             </h2>
-            <p className="uppercase text-4xl tracking-[0.05em] mt-2">
+            <p className="uppercase text-xl md:text-3xl tracking-[0.05em] mt-1 md:mt-2">
               the basics
             </p>
           </div>
           {cards.map((card, index) => (
             <React.Fragment key={index}>
-              <div className="flex w-[90%] xl:w-3/5 mx-auto p-6 xl:pl-16 xl:pr-8 xl:py-8 bg-gray-200 hover:shadow-basic transition-all duration-300 gap-16 rounded-md">
-                <div className="hidden xl:flex min-h-full items-center justify-center">
+              <div className="flex flex-col md:flex-row w-full md:w-[90%] xl:w-3/5 mx-auto p-4 md:p-6 xl:pl-16 xl:pr-8 xl:py-8 bg-gray-200 hover:shadow-basic transition-all duration-300 gap-4 md:gap-16 rounded-md">
+                <div className="hidden md:flex min-h-full items-center justify-center">
                   <p
                     style={jibril.style}
-                    className="text-6xl text-tomato [text-shadow:_0_0_18px_rgba(0,0,0,0.9)]"
+                    className="text-4xl md:text-6xl text-tomato [text-shadow:_0_0_18px_rgba(0,0,0,0.9)]"
                   >
                     {index + 1}
                   </p>
                 </div>
-                <div className="flex flex-col gap-4">
-                  <div className="flex flex-row items-center gap-4">
+                <div className="flex flex-col gap-2 md:gap-4">
+                  <div className="flex flex-row items-center gap-2 md:gap-4">
                     <div className="h-2 w-2 bg-tomato rotate-45" />
                     <h3
                       style={jibril.style}
-                      className="uppercase text-xl md:text-3xl leading-normal tracking-[2.8px]"
+                      className="uppercase text-lg md:text-3xl leading-normal tracking-[1.5px] md:tracking-[2.8px]"
                     >
                       {card.title}
                     </h3>
                     <div className="h-2 w-2 bg-tomato rotate-45" />
                   </div>
-                  <p className="text-sm md:text-xl leading-normal tracking-[1.5px]">
+                  <p className="text-sm md:text-xl leading-normal tracking-[1px] md:tracking-[1.5px]">
                     {card.description}
                   </p>
                 </div>

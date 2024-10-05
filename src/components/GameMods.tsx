@@ -75,22 +75,22 @@ const GameMods = () => {
 
   return (
     <section
-      className="w-full relative mt-64 xl:mt-80"
+      className="w-full relative mt-16 md:mt-40 px-4"
       aria-labelledby="game-modes-heading"
     >
       <div className="w-full flex flex-col items-center">
-        <div className="mt-12 flex flex-col items-center gap-16 cursor-default">
+        <div className="mt-8 flex flex-col items-center gap-8 md:gap-16 cursor-default">
           <div
             style={jibril.style}
-            className="text-center leading-[40px] mb-2 flex flex-col xl:gap-4"
+            className="text-center leading-[30px] md:leading-[40px] mb-4 flex flex-col gap-2"
           >
             <h2
               id="game-modes-heading"
-              className="uppercase  text-4xl tracking-[0.1em]"
+              className="uppercase text-3xl md:text-4xl tracking-[0.1em]"
             >
               Type of <span className="text-tomato">Leaderboards</span>
             </h2>
-            <p className="uppercase text-lg tracking-[0.05em] mt-2">
+            <p className="uppercase text-lg tracking-[0.05em] mt-1">
               Explore different ways to rank up
             </p>
           </div>
@@ -98,12 +98,12 @@ const GameMods = () => {
             <React.Fragment key={index}>
               <div
                 className={`flex flex-col ${
-                  index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-                } items-center gap-12 w-[90%] xl:w-4/5 mx-auto p-12 bg-gray-200 hover:shadow-basic transition-all duration-300 rounded-lg`}
+                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                } items-center gap-8 md:gap-12 w-full md:w-[90%] xl:w-4/5 mx-auto p-6 md:p-12 bg-gray-200 hover:shadow-basic transition-all duration-300 rounded-lg`}
                 aria-labelledby={`leaderboard-title-${index}`}
                 aria-describedby={`leaderboard-desc-${index}`}
               >
-                <div className="lg:w-1/2 flex items-center justify-center">
+                <div className="md:w-1/2 flex items-center justify-center mb-4 md:mb-0">
                   <Image
                     src={board.image}
                     alt={board.alt}
@@ -114,22 +114,22 @@ const GameMods = () => {
                     draggable={false}
                   />
                 </div>
-                <div className="flex flex-col gap-6 lg:w-1/2 text-left">
+                <div className="flex flex-col gap-4 md:gap-6 md:w-1/2 text-left">
                   <h3
                     id={`leaderboard-title-${index}`}
                     style={jibril.style}
-                    className="text-3xl md:text-4xl text-tomato leading-normal tracking-[1.5px]"
+                    className="text-2xl md:text-3xl text-tomato leading-normal tracking-[1.5px]"
                   >
                     {board.title}
                   </h3>
                   <div
                     id={`leaderboard-desc-${index}`}
-                    className="flex flex-col gap-4"
+                    className="flex flex-col gap-2 md:gap-4"
                   >
                     {board.description.map((desc, idx) => (
                       <p
                         key={idx}
-                        className="text-lg md:text-xl leading-normal tracking-[1.5px]"
+                        className="text-base md:text-lg leading-normal tracking-[1.2px]"
                       >
                         {desc.content}
                       </p>
