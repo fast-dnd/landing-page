@@ -23,7 +23,7 @@ const GameMods = () => {
         },
       ],
       image: "/images/aibox.jpg",
-      alt: "AI-BOX Leaderboard",
+      alt: "AI-BOX Leaderboard showing daily unique queries and rewards",
     },
     {
       title: "COMMUNITY BATTLES",
@@ -46,14 +46,14 @@ const GameMods = () => {
         },
       ],
       image: "/images/community-battles.png",
-      alt: "Community Battles Leaderboard",
+      alt: "Community Battles leaderboard showcasing seasonal competitions and prizes",
     },
     {
       title: "HEROIC RATING",
       description: [
         {
           content:
-            "🏅 Everlasting Recognition: Heroic rating is regular leaderboard that determine your RPG skill and are everlasting. They highlight the best players in three categories.",
+            "🏅 Everlasting Recognition: Heroic rating is a regular leaderboard that determines your RPG skill and is everlasting. It highlights the best players in three categories.",
         },
         {
           content:
@@ -68,25 +68,31 @@ const GameMods = () => {
             "✍️ Content Creator: Create adventures that other players try out. The more popular your adventures, the higher your Content Creator rating!",
         },
       ],
-      image: "/images/heroic-leaderboards.png", // Placeholder for a new image if available
-      alt: "Heroic Leaderboards",
+      image: "/images/heroic-leaderboards.png",
+      alt: "Heroic Leaderboards showing top RPG players in various categories",
     },
   ];
 
   return (
-    <div className="w-full relative mt-64 xl:mt-80">
+    <section
+      className="w-full relative mt-64 xl:mt-80"
+      aria-labelledby="game-modes-heading"
+    >
       <div className="w-full flex flex-col items-center">
         <div className="mt-12 flex flex-col items-center gap-16 cursor-default">
           <div
             style={jibril.style}
-            className="text-center leading-[60px] mb-2 flex flex-col xl:gap-8"
+            className="text-center leading-[40px] mb-2 flex flex-col xl:gap-4"
           >
-            <h2 className="uppercase text-tomato text-xl xl:text-[72px] tracking-[0.4em] indent-[0.4em]">
-              Type of Leaderboards
+            <h2
+              id="game-modes-heading"
+              className="uppercase  text-4xl tracking-[0.1em]"
+            >
+              Type of <span className="text-tomato">Leaderboards</span>
             </h2>
-            <div className="uppercase text-base xl:text-[32px] tracking-[0.18em] indent-[0.18em] mt-2">
+            <p className="uppercase text-lg tracking-[0.05em] mt-2">
               Explore different ways to rank up
-            </div>
+            </p>
           </div>
           {leaderboards.map((board, index) => (
             <React.Fragment key={index}>
@@ -94,6 +100,8 @@ const GameMods = () => {
                 className={`flex flex-col ${
                   index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
                 } items-center gap-12 w-[90%] xl:w-4/5 mx-auto p-12 bg-gray-200 hover:shadow-basic transition-all duration-300 rounded-lg`}
+                aria-labelledby={`leaderboard-title-${index}`}
+                aria-describedby={`leaderboard-desc-${index}`}
               >
                 <div className="lg:w-1/2 flex items-center justify-center">
                   <Image
@@ -107,13 +115,17 @@ const GameMods = () => {
                   />
                 </div>
                 <div className="flex flex-col gap-6 lg:w-1/2 text-left">
-                  <p
+                  <h3
+                    id={`leaderboard-title-${index}`}
                     style={jibril.style}
-                    className="text-3xl md:text-4xl text-tomato leading-normal tracking-[2.8px]"
+                    className="text-3xl md:text-4xl text-tomato leading-normal tracking-[1.5px]"
                   >
                     {board.title}
-                  </p>
-                  <div className="flex flex-col gap-4">
+                  </h3>
+                  <div
+                    id={`leaderboard-desc-${index}`}
+                    className="flex flex-col gap-4"
+                  >
                     {board.description.map((desc, idx) => (
                       <p
                         key={idx}
@@ -129,7 +141,7 @@ const GameMods = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

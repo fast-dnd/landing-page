@@ -7,6 +7,7 @@ import Partners from "@/components/Partners";
 import VideoAndScreenshots from "@/components/VideoAndScreenshots";
 import Welcome from "@/components/Welcome";
 import FAQ from "@/components/FAQ";
+import DungeonMasters from "@/components/DungeonMasters";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Welcome />
       <Intro />
       <VideoAndScreenshots />
+      {/* <DungeonMasters /> */}
       <Partners />
       <GameMods />
       <Basics />

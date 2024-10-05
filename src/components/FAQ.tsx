@@ -1,6 +1,17 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
+import { jibril } from "@/utils/fonts";
+import Link from "next/link";
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
 
 const FAQ = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
+
   const faqs = [
     {
       question: "What is V3RPG?",
@@ -34,7 +45,7 @@ const FAQ = () => {
       answer: (
         <>
           <span className="font-bold">AI-BOX</span> is a daily challenge where
-          each player gets a <span className="font-bold">unique query</span>.
+          each player gets a<span className="font-bold"> unique query</span>.
           You have one chance each day to answer, and our decentralized AI
           judge, powered by Ora Protocol, determines your rating. Depending on
           your rating, you can{" "}
@@ -83,19 +94,62 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="w-full flex flex-col items-center px-8 py-16 ">
-      <h2 className="text-4xl font-bold text-center text-tomato mb-12">
+    <section
+      className="w-full flex flex-col items-center px-8 py-16"
+      aria-labelledby="faq-heading"
+    >
+      <h2
+        id="faq-heading"
+        className="uppercase text-tomato text-4xl mb-12"
+        style={jibril.style}
+      >
         Frequently Asked Questions
       </h2>
       <div className="max-w-4xl w-full flex flex-col gap-8">
         {faqs.map((faq, index) => (
-          <div key={index} className=" p-6 rounded-lg shadow-md">
-            <h3 className="text-2xl font-semibold mb-4 text-tomato">
-              {faq.question}
-            </h3>
-            <p className="text-lg leading-relaxed">{faq.answer}</p>
+          <div
+            key={index}
+            className="p-6 rounded-lg shadow-md  transition-transform duration-300"
+          >
+            <button
+              className="flex justify-between items-center w-full text-left focus:outline-none"
+              onClick={() => toggleFAQ(index)}
+              aria-expanded={activeIndex === index}
+              aria-controls={`faq-answer-${index}`}
+            >
+              <h3 className="text-2xl font-semibold  flex-1">{faq.question}</h3>
+              {activeIndex === index ? (
+                <ChevronUpIcon className="w-6 h-6 " />
+              ) : (
+                <ChevronDownIcon className="w-6 h-6 " />
+              )}
+            </button>
+            <div
+              id={`faq-answer-${index}`}
+              className={`mt-4 text-lg leading-relaxed transition-all duration-300 overflow-hidden ${
+                activeIndex === index ? "max-h-96" : "max-h-0"
+              }`}
+            >
+              {activeIndex === index && <p>{faq.answer}</p>}
+            </div>
           </div>
         ))}
+      </div>
+      <div className="mt-12 md:mt-40 flex flex-col gap-4 items-center">
+        <p
+          className="text-3xl text-center uppercase tracking-[2.8px]"
+          style={jibril.style}
+        >
+          Are you <span className="text-tomato ">ready ?</span>
+        </p>
+        <Link
+          className="mt-4 md:mt-10 bg-tomato hover:scale-105 hover:shadow-[0px_0px_60px_rgba(255,_90,_90,_0.4)] flex flex-row py-4 tracking-widest text-xl font-extrabold px-24 text-gray-200 transition-all duration-300 rounded-md"
+          href="https://play.v3rpg.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PLAY NOW
+        </Link>
       </div>
     </section>
   );
