@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://landing.v3rpg.com/sitemap.xml
