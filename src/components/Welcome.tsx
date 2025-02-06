@@ -45,7 +45,7 @@ const Welcome = () => {
           data-game-type="ai-rpg"
           title="Play AI-Powered D&D Style Text Adventure"
         >
-          PLAY AI RPG NOW
+          CLICK TO PLAY NOW
         </Link>
         <p className="text-sm text-gray-300 mt-2">
           Free AI Text Adventure Game | D&D-Style Storytelling | Multiplayer RPG
