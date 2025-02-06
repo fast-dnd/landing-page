@@ -1,0 +1,16 @@
+{
+    "redirects": [
+      {
+        "source": "/:path*",
+        "has": [
+          {
+            "type": "host",
+            "value": "www.landing.v3rpg.com"
+          }
+        ],
+        "destination": "https://landing.v3rpg.com/:path*",
+        "permanent": true
+      }
+    ]
+  }
+  
