@@ -1,0 +1,9 @@
+{
+    "redirects": [
+      {
+        "source": "https://www.landing.v3rpg.com/:path*",
+        "destination": "https://landing.v3rpg.com/:path*",
+        "permanent": true
+      }
+    ]
+  }
