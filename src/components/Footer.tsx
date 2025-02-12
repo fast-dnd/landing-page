@@ -1,91 +1,92 @@
 "use client";
 
 import Link from "next/link";
-import React, { Fragment } from "react";
+import React from "react";
 
 const footerLinks = [
   {
-    name: "Join our Discord Community",
+    name: "Community",
     href: "https://discord.com/invite/36chp8DnzC",
-    label: "Join our AI Gaming community on Discord",
-    icon: "discord",
-    category: "social"
+    label: "Join v3RPG Discord Community",
+    category: "social",
   },
   {
-    name: "Privacy Policy",
+    name: "Privacy",
     href: "/privacy-policy",
-    label: "Read our Privacy Policy",
-    category: "legal"
+    label: "Privacy Policy",
+    category: "legal",
   },
   {
-    name: "Terms of Service",
+    name: "Terms",
     href: "/terms",
-    label: "View Terms of Service",
-    category: "legal"
+    label: "Terms of Service",
+    category: "legal",
   },
   {
-    name: "Contact Us",
+    name: "Contact",
     href: "/contact",
-    label: "Get in touch with our AI Gaming team",
-    category: "support"
-  }
+    label: "Contact Support",
+    category: "support",
+  },
 ];
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer 
-      className="w-full border-t border-white/70 z-10"
+    <footer
+      className="w-full border-t border-white/70 mt-16"
       role="contentinfo"
-      aria-label="Site Footer"
+      itemScope
+      itemType="https://schema.org/WPFooter"
     >
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="py-8 md:py-12">
-          <nav 
-            className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-12"
+      <div className="max-w-5xl mx-auto px-4">
+        <div className="py-8">
+          <nav
+            className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8"
             aria-label="Footer Navigation"
           >
             {footerLinks.map((link, index) => (
-              <Fragment key={link.name}>
+              <React.Fragment key={link.name}>
                 <Link
                   href={link.href}
-                  className="uppercase text-sm tracking-[0.07em] hover:underline underline-offset-4 transition-all duration-300"
-                  target={link.category === 'social' ? "_blank" : undefined}
-                  rel={link.category === 'social' ? "noopener noreferrer" : undefined}
+                  className="text-sm tracking-wider hover:text-tomato transition-colors duration-200"
+                  target={link.category === "social" ? "_blank" : undefined}
+                  rel={
+                    link.category === "social"
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
                   aria-label={link.label}
                   data-category={link.category}
                 >
                   {link.name}
                 </Link>
                 {index !== footerLinks.length - 1 && (
-                  <div 
-                    className="hidden md:block h-2 w-2 rotate-45 bg-gray-700 flex-shrink-0" 
+                  <span
+                    className="hidden md:block h-1.5 w-1.5 rotate-45 bg-gray-700"
                     aria-hidden="true"
                   />
                 )}
-              </Fragment>
+              </React.Fragment>
             ))}
           </nav>
 
           <div className="mt-8 text-center text-sm text-gray-400">
-            <p>
-              <span itemProp="copyrightYear">{currentYear}</span> ©{" "}
-              <span itemProp="copyrightHolder">v3RPG</span> - AI-Powered Text Adventure Gaming
+            <p itemProp="copyrightNotice">
+              © {currentYear} v3RPG - Next-Gen Fantasy Gaming
             </p>
-            <p className="mt-2">
-              Experience next-gen D&D-style gameplay with AI-driven storytelling
+            <p className="mt-2" itemProp="description">
+              Strategic RPG Adventures with Advanced AI
             </p>
           </div>
 
-          {/* Hidden SEO content */}
-          <div className="hidden" aria-hidden="true" itemScope itemType="https://schema.org/Organization">
-            <meta itemProp="name" content="v3RPG" />
-            <meta itemProp="description" content="AI-powered text adventure gaming platform featuring D&D-style gameplay and blockchain rewards" />
-            <meta itemProp="url" content="https://v3rpg.com" />
-            <link itemProp="sameAs" href="https://discord.com/invite/36chp8DnzC" />
-            <meta itemProp="keywords" content="AI RPG, Text Adventure, D&D Gaming, AI Storytelling, Blockchain Gaming" />
-          </div>
+          <meta itemProp="name" content="v3RPG" />
+          <meta itemProp="url" content="https://v3rpg.com" />
+          <meta
+            itemProp="keywords"
+            content="RPG, Fantasy Gaming, Strategic Adventures"
+          />
         </div>
       </div>
     </footer>

@@ -1,87 +1,109 @@
 import React from "react";
+import Link from "next/link";
 
 const Contact = () => {
-    return (
-      <div 
-        className="min-h-screen bg-gray-900 px-4 py-16"
-        itemScope 
-        itemType="https://schema.org/ContactPage"
-      >
-        <div className="max-w-2xl mx-auto">
-          <h1 className="text-4xl font-bold text-white mb-8">
-            Contact Our AI Gaming Team
-          </h1>
-          
-          <div className="bg-red-200 rounded-lg p-8 shadow-xl">
-            <div className="space-y-6">
-              <div>
-                <h2 className="text-2xl text-tomato mb-4">Get in Touch</h2>
-                <p className="text-gray-300">
-                  Have questions about our AI-powered RPG? We are here to help!
-                </p>
-              </div>
-  
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-white font-semibold mb-2">Discord Community</h3>
-                  <p className="text-gray-300">
-                    Join our active Discord community for quick responses and gaming discussions:
-                    <a 
-                      href="https://discord.com/invite/36chp8DnzC"
-                      className="text-tomato hover:underline ml-2"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Join Discord
-                    </a>
-                  </p>
-                </div>
-  
-                <div>
-                  <h3 className="text-white font-semibold mb-2">Email Support</h3>
-                  <p className="text-gray-300">
-                    For business inquiries and support:
-                    <a 
-                      href="mailto:dusan@v3rpg.com"
-                      className="text-tomato hover:underline ml-2"
-                    >
-                      dusan@v3rpg.com
-                    </a>
-                  </p>
-                </div>
-  
-                <div>
-                  <h3 className="text-white font-semibold mb-2">Social Media</h3>
-                  <div className="flex space-x-4">
-                    <a 
-                      href="https://twitter.com/v3rpg"
-                      className="text-gray-300 hover:text-tomato"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Twitter
-                    </a>
-                    <a 
-                      href="https://www.instagram.com/game.v3rpg/"
-                      className="text-gray-300 hover:text-tomato"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Instagram
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+  return (
+    <section
+      className="bg-gray-[#171716] text-[#FAFAFA] mb-8"
+      itemScope
+      itemType="https://schema.org/ContactPage"
+    >
+      <div className="container mx-auto px-4 py-8 bg-white/10 mt-8 rounded-lg border-white/30 border-2">
+        <h1 className="text-3xl font-bold mb-6">Contact Support</h1>
+
+        <div
+          className="space-y-6"
+          itemScope
+          itemType="https://schema.org/Organization"
+        >
+          <div>
+            <h2 className="text-2xl font-semibold mb-3">Primary Contact</h2>
+            <p className="mb-2">
+              For general inquiries and support, please email:{" "}
+              <Link
+                href="mailto:support@v3rpg.com"
+                className="text-tomato hover:opacity-80 transition-opacity"
+                itemProp="email"
+              >
+                support@v3rpg.com
+              </Link>
+            </p>
           </div>
-  
-          {/* Hidden SEO content */}
-          <meta itemProp="name" content="Contact v3RPG - AI Gaming Support" />
-          <meta itemProp="description" content="Get in touch with the v3RPG team for AI gaming support, feedback, and community discussions." />
+
+          <div>
+            <h2 className="text-2xl font-semibold mb-3">Community Support</h2>
+            <p className="mb-2">
+              Join our Discord community for real-time assistance:{" "}
+              <Link
+                href="https://discord.com/invite/36chp8DnzC"
+                className="text-tomato hover:opacity-80 transition-opacity"
+                target="_blank"
+                rel="noopener noreferrer"
+                itemProp="sameAs"
+              >
+                v3RPG Discord
+              </Link>
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold mb-3">Business Inquiries</h2>
+            <p className="mb-2">
+              For partnerships and business matters:{" "}
+              <Link
+                href="mailto:business@v3rpg.com"
+                className="text-tomato hover:opacity-80 transition-opacity"
+                itemProp="email"
+              >
+                business@v3rpg.com
+              </Link>
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold mb-3">Office Address</h2>
+            <address
+              className="not-italic"
+              itemProp="address"
+              itemScope
+              itemType="https://schema.org/PostalAddress"
+            >
+              <span itemProp="streetAddress">Žorža Klemansoa 39</span>
+              <br />
+              <span itemProp="addressLocality">Belgrade</span>,{" "}
+              <span itemProp="addressCountry">Serbia</span>
+              <br />
+              <span itemProp="postalCode">11000</span>
+            </address>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold mb-3">Response Time</h2>
+            <p className="mb-2">
+              We aim to respond to all inquiries within 24 hours during business
+              days.
+            </p>
+          </div>
         </div>
+
+        <meta itemProp="name" content="v3RPG Support" />
+        <meta
+          itemProp="description"
+          content="Contact v3RPG support team for assistance, business inquiries, or community engagement."
+        />
       </div>
-    );
-  };
-  
+    </section>
+  );
+};
 
 export default Contact;
+
+export const metadata = {
+  title: "Contact Support | v3RPG",
+  description:
+    "Get in touch with v3RPG support team for assistance with gameplay, technical issues, or business inquiries.",
+  openGraph: {
+    title: "Contact v3RPG Support",
+    description: "Reach out to our support team for assistance and inquiries.",
+  },
+};
