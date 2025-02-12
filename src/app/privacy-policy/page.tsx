@@ -1,140 +1,109 @@
 import React from "react";
+import Link from "next/link";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="bg-gray-[#171716] text-[#FAFAFA] mb-8">
+    <article
+      className="bg-gray-[#171716] text-[#FAFAFA] mb-8"
+      itemScope
+      itemType="https://schema.org/WebPage"
+    >
       <div className="container mx-auto px-4 py-8 bg-white/10 mt-8 rounded-lg border-white/30 border-2">
-        <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
+        <header>
+          <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
+          <p className="mb-4">Last updated: March 15, 2024</p>
+        </header>
 
-        <p className="mb-4">
-          This privacy policy sets out how our website uses and protects any
-          information that you give us when you use this website.
-        </p>
+        <div className="space-y-8" itemProp="mainContentOfPage">
+          <section>
+            <h2 className="text-2xl font-semibold mb-3">
+              Information Collection
+            </h2>
+            <p className="mb-4">
+              We collect information necessary to provide our gaming services
+              and enhance user experience:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Account information (username, email)</li>
+              <li>Game progress and achievements</li>
+              <li>Technical data (device info, IP address)</li>
+              <li>Usage statistics and preferences</li>
+            </ul>
+          </section>
 
-        <h2 className="text-2xl font-bold mb-2">Information We Collect</h2>
+          <section>
+            <h2 className="text-2xl font-semibold mb-3">Data Usage</h2>
+            <p className="mb-4">Your information helps us:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Provide and improve gaming services</li>
+              <li>Maintain leaderboards and achievements</li>
+              <li>Ensure fair play and security</li>
+              <li>Communicate updates and support</li>
+            </ul>
+          </section>
 
-        <p className="mb-4">We may collect the following information:</p>
+          <section>
+            <h2 className="text-2xl font-semibold mb-3">Data Protection</h2>
+            <p className="mb-4">
+              We implement industry-standard security measures to protect your
+              data:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Encryption of sensitive information</li>
+              <li>Regular security audits</li>
+              <li>Access controls and monitoring</li>
+              <li>Secure data storage practices</li>
+            </ul>
+          </section>
 
-        <ul className="list-disc list-inside mb-4">
-          <li>Your email</li>
-          <li>Demographic information</li>
-          <li>Other information relevant to customer surveys and/or offers</li>
-        </ul>
+          <section>
+            <h2 className="text-2xl font-semibold mb-3">User Rights</h2>
+            <p className="mb-4">You have the right to:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Access your personal data</li>
+              <li>Request data correction</li>
+              <li>Delete your account</li>
+              <li>Opt out of marketing communications</li>
+            </ul>
+          </section>
 
-        <h2 className="text-2xl font-bold mb-2">How We Use the Information</h2>
+          <section>
+            <h2 className="text-2xl font-semibold mb-3">Contact Information</h2>
+            <p className="mb-4">
+              For privacy-related inquiries, contact us at:{" "}
+              <Link
+                href="mailto:privacy@v3rpg.com"
+                className="text-tomato hover:opacity-80 transition-opacity"
+              >
+                privacy@v3rpg.com
+              </Link>
+            </p>
+          </section>
+        </div>
 
-        <p className="mb-4">
-          We require this information to understand your needs and provide you
-          with a better service, and in particular for the following reasons:
-        </p>
+        <footer className="mt-8 pt-4 border-t border-white/30">
+          <p className="text-sm">
+            This privacy policy is subject to updates. Check back regularly for
+            changes.
+          </p>
+        </footer>
 
-        <ul className="list-disc list-inside mb-4">
-          <li>Internal record keeping</li>
-          <li>Improving our products and services</li>
-          <li>
-            Sending promotional emails about new products, special offers, or
-            other information which we think you may find interesting
-          </li>
-          <li>
-            From time to time, we may also use your information to contact you
-            for market research purposes. We may contact you by email, phone, or
-            mail. We may use the information to customize the website according
-            to your interests.
-          </li>
-        </ul>
-
-        <h2 className="text-2xl font-bold mb-2">Security</h2>
-
-        <p className="mb-4">
-          We are committed to ensuring that your information is secure. In order
-          to prevent unauthorized access or disclosure, we have put in place
-          suitable physical, electronic, and managerial procedures to safeguard
-          and secure the information we collect online.
-        </p>
-
-        <h2 className="text-2xl font-bold mb-2">Cookies</h2>
-
-        <p className="mb-4">
-          A cookie is a small file that asks permission to be placed on your
-          computer&apos;s hard drive. Once you agree, the file is added, and the
-          cookie helps analyze web traffic or lets you know when you visit a
-          particular site. Cookies allow web applications to respond to you as
-          an individual. The web application can tailor its operations to your
-          needs, likes, and dislikes by gathering and remembering information
-          about your preferences.
-        </p>
-
-        <p className="mb-4">
-          Overall, cookies help us provide you with a better website by enabling
-          us to monitor which pages you find useful and which you do not. A
-          cookie in no way gives us access to your computer or any information
-          about you, other than the data you choose to share with us.
-        </p>
-
-        <h2 className="text-2xl font-bold mb-2">Links to Other Websites</h2>
-
-        <p className="mb-4">
-          Our website may contain links to other websites of interest. However,
-          once you have used these links to leave our site, you should note that
-          we do not have any control over that other website. Therefore, we
-          cannot be responsible for the protection and privacy of any
-          information which you provide whilst visiting such sites and such
-          sites are not governed by this privacy statement. You should exercise
-          caution and look at the privacy statement applicable to the website in
-          question.
-        </p>
-
-        <h2 className="text-2xl font-bold mb-2">
-          Controlling Your Personal Information
-        </h2>
-
-        <p className="mb-4">
-          You may choose to restrict the collection or use of your personal
-          information in the following ways:
-        </p>
-
-        <ul className="list-disc list-inside mb-4">
-          <li>
-            If you have previously agreed to us using your personal information
-            for direct marketing purposes, you may change your mind at any time
-            by writing to or emailing us at{" "}
-            <a className="text-tomato" href="mailto: dusan@v3rpg.com">
-              dusan@v3rpg.com
-            </a>
-          </li>
-          <li>
-            We will not sell, distribute, or lease your personal information to
-            third parties unless we have your permission or are required by law
-            to do so. We may use your personal information to send you
-            promotional information about third parties which we think you may
-            find interesting if you tell us that you wish this to happen.
-          </li>
-          <li>
-            You may request details of personal information which we hold about
-            you. If you would like a copy of the information held on you, please
-            write to{" "}
-            <span className="text-tomato/80 italic">
-              V3RPG, Žorža Klemansoa 39, Beograd, Srbija, 11000{" "}
-            </span>
-            or email{" "}
-            <a className="text-tomato" href="mailto: dusan@v3rpg.com">
-              dusan@v3rpg.com
-            </a>
-          </li>
-          <li>
-            If you believe that any information we are holding on you is
-            incorrect or incomplete, please write to or email us as soon as
-            possible at the above address. We will promptly correct any
-            information found to be incorrect.
-          </li>
-        </ul>
-
-        <p className="mb-4">
-          This privacy policy is subject to change without notice.
-        </p>
+        <meta itemProp="dateModified" content="2024-03-15" />
+        <meta itemProp="author" content="v3RPG" />
       </div>
-    </div>
+    </article>
   );
 };
 
 export default PrivacyPolicy;
+
+export const metadata = {
+  title: "Privacy Policy | v3RPG",
+  description:
+    "Learn how v3RPG collects, uses, and protects your personal information while using our gaming platform.",
+  openGraph: {
+    title: "v3RPG Privacy Policy",
+    description:
+      "Our commitment to protecting your privacy and personal information.",
+  },
+};

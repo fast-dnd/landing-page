@@ -19,7 +19,7 @@ const Intro = () => {
           src="/images/helmet.png"
           width={576}
           height={729}
-          alt="Medieval Knight's Helmet - Embark on AI-Powered D&D Adventures"
+          alt="Medieval Knight's Helmet"
           className="game-asset"
           loading="eager"
         />
@@ -31,16 +31,16 @@ const Intro = () => {
           <h2
             id="intro-heading"
             style={jibril.style}
-            className="text-lg md:text-[28px] leading-[32px] md:leading-[48px] tracking-[1.6px] md:tracking-[0.08em] text-center uppercase opacity-80"
+            className="text-lg md:text-[28px] leading-[32px] md:leading-[48px] tracking-[1.6px] md:tracking-[0.08em] text-center"
           >
-            <span className="text-tomato">AI-Powered</span> RPG &{" "}
-            <span className="text-tomato">D&D-Style</span> Adventures
+            <span className="text-tomato">Dynamic</span> Storytelling &{" "}
+            <span className="text-tomato">Strategic</span> Combat
           </h2>
           <p
             style={jibril.style}
-            className="text-lg md:text-[28px] leading-[32px] md:leading-[48px] tracking-[1.6px] md:tracking-[0.08em] text-center uppercase opacity-80 mt-4"
+            className="text-lg md:text-[28px] leading-[32px] md:leading-[48px] tracking-[1.6px] md:tracking-[0.08em] text-center mt-4"
           >
-            NEXT-GEN TEXT ADVENTURE GAMING
+            Where Technology Meets Fantasy
           </p>
         </div>
         <div
@@ -51,23 +51,19 @@ const Intro = () => {
           <div className="w-[10px] h-[10px] rotate-45 bg-white flex-shrink-0" />
           <div className="w-[100px] md:w-[134px] h-0 border border-tomato" />
         </div>
-        <div 
-          className="text-sm px-4 md:px-0 max-w-full md:max-w-[800px] text-center md:text-xl leading-[21.5px] md:leading-[46px] tracking-[2.24px] md:tracking-[0.2em] uppercase font-light mt-4"
+        <div
+          className="text-sm px-4 md:px-0 max-w-full md:max-w-[800px] text-center md:text-xl leading-[21.5px] md:leading-[46px] tracking-[2.24px] md:tracking-[0.2em] font-light mt-4"
           itemProp="about"
         >
           <p>
-            <span className="font-bold">👋 DISCOVER</span> the ultimate{" "}
-            <span className="font-bold">AI text adventure experience</span> where you
-            create custom{" "}
-            <span className="font-bold">🎭 D&D characters</span>, generate unique{" "}
-            <span className="font-bold">🗺️ AI-driven storylines</span>, and compete in{" "}
-            <span className="font-bold">🏆 multiplayer battles</span>.
+            Shape your hero journey through richly detailed worlds where your
+            choices influence the narrative. Master tactical combat and forge
+            alliances in dynamic multiplayer encounters.
           </p>
           <p className="mt-4">
-            Earn <span className="font-bold">🎁 blockchain rewards</span> and experience
-            fair gameplay with our innovative{" "}
-            <span className="font-bold">⚡ AI validation system</span> powered by the{" "}
-            <span className="font-bold">Ora Protocol</span>.
+            Participate in community-driven events and earn rewards through our
+            innovative validation system, ensuring fair play and authentic
+            achievements.
           </p>
         </div>
       </div>
@@ -78,17 +74,23 @@ const Intro = () => {
           src="/images/dragon.png"
           width={576}
           height={729}
-          alt="Fantasy Dragon - AI-Generated Quests and Epic Battles in Text RPG"
+          alt="Mythical Dragon"
           className="game-asset"
           loading="eager"
         />
       </div>
 
       {/* Hidden SEO-boosting metadata */}
-      <meta itemProp="gameCategory" content="AI Text Adventure, D&D RPG, Interactive Fiction" />
-      <meta itemProp="characterAttribute" content="Custom AI Characters, D&D Style Heroes" />
-      <meta itemProp="gamePlatform" content="Web-based RPG, Blockchain Gaming" />
-      <meta itemProp="feature" content="AI Storytelling, Multiplayer Battles, Blockchain Rewards" />
+      <meta
+        itemProp="gameCategory"
+        content="Interactive Fiction, Strategy RPG"
+      />
+      <meta itemProp="characterAttribute" content="Customizable Heroes" />
+      <meta itemProp="gamePlatform" content="Web Platform" />
+      <meta
+        itemProp="feature"
+        content="Dynamic Storytelling, Strategic Combat, Community Events"
+      />
     </section>
   );
 };

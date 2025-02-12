@@ -5,35 +5,36 @@ import Link from "next/link";
 
 const Welcome = () => {
   return (
-    <section 
+    <section
       className="flex items-center justify-center flex-col text-center mt-16 px-4"
-      aria-label="Welcome to AI Text Adventure RPG"
+      aria-label="Welcome section"
     >
       <Image
         src="/images/logo.png"
         width={400}
         height={200}
-        alt="v3RPG - AI-Powered Text Adventure & D&D Style RPG Game"
+        alt="v3RPG Logo"
         className="w-4/5 md:w-auto"
         priority
       />
-      <div 
+      <div
         className="flex flex-col gap-4 mt-8"
-        itemScope 
+        itemScope
         itemType="https://schema.org/Game"
       >
         <h1 className="text-2xl md:text-4xl leading-normal tracking-wide max-w-md md:max-w-screen-lg px-4 font-bold">
-          🎮 Experience Next-Gen AI Text Adventure Gaming
+          Experience Next-Generation AI Gaming
         </h1>
-        <h2 className="text-lg md:text-3xl leading-normal tracking-wide max-w-md md:max-w-screen-lg px-4">
-          ✨ Create Custom <span className="font-bold">D&D Adventures</span>,{" "}
-          <span className="font-bold">AI Characters</span> &{" "}
-          <span className="font-bold">Interactive Stories</span>
-        </h2>
-        <h2 className="text-lg md:text-3xl leading-normal tracking-wide max-w-md md:max-w-screen-lg px-4">
-          🏆 Join <span className="font-bold">Multiplayer Battles</span> and Earn{" "}
-          <span className="font-bold">Blockchain Rewards</span> 🎁
-        </h2>
+        <div className="text-lg md:text-3xl leading-normal tracking-wide max-w-md md:max-w-screen-lg px-4">
+          <h2>
+            Create Custom <span className="font-bold">Adventures</span> and{" "}
+            <span className="font-bold">Interactive Stories</span>
+          </h2>
+          <h2 className="mt-4">
+            Join <span className="font-bold">Multiplayer Battles</span> and Earn{" "}
+            <span className="font-bold">Web3 Rewards</span>
+          </h2>
+        </div>
       </div>
       <div className="flex flex-col items-center gap-2">
         <Link
@@ -41,17 +42,15 @@ const Welcome = () => {
           href="https://play.v3rpg.com/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Start your AI RPG adventure - Play v3RPG now"
-          data-game-type="ai-rpg"
-          title="Play AI-Powered D&D Style Text Adventure"
+          aria-label="Start playing v3RPG"
         >
-          CLICK TO PLAY NOW
+          Play Now
         </Link>
         <p className="text-sm text-gray-300 mt-2">
-          Free AI Text Adventure Game | D&D-Style Storytelling | Multiplayer RPG
+          AI-Powered Fantasy Adventure | Multiplayer RPG
         </p>
       </div>
-      <meta itemProp="genre" content="AI RPG, Text Adventure, D&D Style Game" />
+      <meta itemProp="genre" content="AI RPG, Fantasy Adventure" />
       <meta itemProp="gamePlatform" content="Web Browser" />
     </section>
   );
